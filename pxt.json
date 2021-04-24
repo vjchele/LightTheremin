@@ -1,5 +1,5 @@
 {
-    "name": "LightTheremin",
+    "name": "Min-Max-Thermometer",
     "description": "",
     "dependencies": {
         "core": "*",

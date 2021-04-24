@@ -21,7 +21,13 @@
  * 
  * 7.
  */
+let minTemp = input.temperature()
+let maxTemp = input.temperature()
 basic.forever(function () {
-    basic.showString("THEREMIN")
-    music.setTempo(input.lightLevel() * 24)
+    if (input.temperature() < minTemp) {
+        minTemp = input.temperature()
+    }
+    if (input.temperature() > maxTemp) {
+        maxTemp = input.temperature()
+    }
 })
